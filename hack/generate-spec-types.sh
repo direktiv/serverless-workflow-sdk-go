@@ -36,13 +36,13 @@ sed -i 's/$id/id/g' "${targetdir}/schema/functions.json"
 sed -i 's/$id/id/g' "${targetdir}/schema/workflow.json"
 
 ./bin/gojsonschema -v \
-  --schema-package=https://serverlessworkflow.org/core/common.json=github.com/serverlessworkflow/sdk-go/model \
+  --schema-package=https://serverlessworkflow.org/core/common.json=github.com/vorteil/serverless-workflow-sdk-go/model \
    --schema-output=https://serverlessworkflow.org/core/common.json=zz_generated.types_common.go \
-  --schema-package=https://serverlessworkflow.org/core/events.json=github.com/serverlessworkflow/sdk-go/model \
+  --schema-package=https://serverlessworkflow.org/core/events.json=github.com/vorteil/serverless-workflow-sdk-go/model \
    --schema-output=https://serverlessworkflow.org/core/events.json=zz_generated.types_events.go \
-  --schema-package=https://serverlessworkflow.org/core/functions.json=github.com/serverlessworkflow/sdk-go/model \
+  --schema-package=https://serverlessworkflow.org/core/functions.json=github.com/vorteil/serverless-workflow-sdk-go/model \
    --schema-output=https://serverlessworkflow.org/core/functions.json=zz_generated.types_functions.go \
-  --schema-package=https://serverlessworkflow.org/core/workflow.json=github.com/serverlessworkflow/sdk-go/model \
+  --schema-package=https://serverlessworkflow.org/core/workflow.json=github.com/vorteil/serverless-workflow-sdk-go/model \
    --schema-output=https://serverlessworkflow.org/core/workflow.json=zz_generated.types_workflow.go \
   "${targetdir}"/schema/common.json "${targetdir}"/schema/events.json "${targetdir}"/schema/functions.json "${targetdir}"/schema/workflow.json
 

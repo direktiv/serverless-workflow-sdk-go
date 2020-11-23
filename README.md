@@ -17,7 +17,7 @@ Current status of features implemented in the SDK is listed in the table below:
 Run the following command in the root of your Go's project:
 
 ```shell script
-$ go get github.com/serverlessworkflow/sdk-go
+$ go get github.com/vorteil/serverless-workflow-sdk-go
 ```
 
 Your `go.mod` file should be updated to add a dependency from the Serverless Workflow specification.
@@ -25,7 +25,7 @@ Your `go.mod` file should be updated to add a dependency from the Serverless Wor
 To use the generated types, import the package in your go file like this:
 
 ```go
-import "github.com/serverlessworkflow/sdk-go/model"
+import "github.com/vorteil/serverless-workflow-sdk-go/model"
 ```
 
 Then just reference the package in your Go file like `myfunction := model.Function{}`.
@@ -40,8 +40,8 @@ package sw
 
 import (
 
-"github.com/serverlessworkflow/sdk-go/model"
-"github.com/serverlessworkflow/sdk-go/parser"
+"github.com/vorteil/serverless-workflow-sdk-go/model"
+"github.com/vorteil/serverless-workflow-sdk-go/parser"
 )
 
 func ParseWorkflow(filePath string) (*model.Workflow, error) {

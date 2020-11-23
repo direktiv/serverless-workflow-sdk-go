@@ -15,7 +15,7 @@
 package parser
 
 import (
-	"github.com/serverlessworkflow/sdk-go/model"
+	"github.com/vorteil/serverless-workflow-sdk-go/model"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

@@ -17,7 +17,7 @@ package parser
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/serverlessworkflow/sdk-go/model"
+	"github.com/vorteil/serverless-workflow-sdk-go/model"
 	"io/ioutil"
 	"os"
 	"sigs.k8s.io/yaml"
