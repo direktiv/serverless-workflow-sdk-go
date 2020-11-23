@@ -1,4 +1,4 @@
-module github.com/serverlessworkflow/sdk-go
+module github.com/vorteil/serverless-workflow-sdk-go
 
 go 1.14
 
