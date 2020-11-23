@@ -52,6 +52,20 @@ func (w *Workflow) UnmarshalJSON(data []byte) error {
 	return nil
 }
 
+type basicEventbasedswitch struct {
+	DataInputSchema  *string          `json:"dataInputSchema,omitempty"`
+	DataOutputSchema *string          `json:"dataOutputSchema,omitempty"`
+	Default          *Defaultdef      `json:"default,omitempty"`
+	EventTimeout     *string          `json:"eventTimeout,omitempty"`
+	Id               *string          `json:"id,omitempty"`
+	Metadata         Metadata_1       `json:"metadata,omitempty"`
+	Name             *string          `json:"name,omitempty"`
+	OnErrors         []Error          `json:"onErrors,omitempty"`
+	Start            *Start           `json:"start,omitempty"`
+	StateDataFilter  *Statedatafilter `json:"stateDataFilter,omitempty"`
+	Type             *string          `json:"type,omitempty"`
+}
+
 // UnmarshalJSON implementation for json Unmarshal function for the Eventbasedswitch type
 func (j *Eventbasedswitch) UnmarshalJSON(data []byte) error {
 	eventBasedSwitch := make(map[string]json.RawMessage)
@@ -84,7 +98,39 @@ func (j *Eventbasedswitch) UnmarshalJSON(data []byte) error {
 		}
 		j.EventConditions[i] = condition
 	}
+
+	o := new(basicEventbasedswitch)
+	err = json.Unmarshal(data, o)
+	if err != nil {
+		return err
+	}
+
+	j.DataInputSchema = o.DataInputSchema
+	j.DataOutputSchema = o.DataOutputSchema
+	j.Default = o.Default
+	j.EventTimeout = o.EventTimeout
+	j.Id = o.Id
+	j.Metadata = o.Metadata
+	j.Name = o.Name
+	j.OnErrors = o.OnErrors
+	j.Start = o.Start
+	j.StateDataFilter = o.StateDataFilter
+	j.Type = o.Type
+
 	return nil
+}
+
+type basedDatabasedswitch struct {
+	DataInputSchema  *string          `json:"dataInputSchema,omitempty"`
+	DataOutputSchema *string          `json:"dataOutputSchema,omitempty"`
+	Default          *Defaultdef      `json:"default,omitempty"`
+	Id               *string          `json:"id,omitempty"`
+	Metadata         Metadata_1       `json:"metadata,omitempty"`
+	Name             *string          `json:"name,omitempty"`
+	OnErrors         []Error          `json:"onErrors,omitempty"`
+	Start            *Start           `json:"start,omitempty"`
+	StateDataFilter  *Statedatafilter `json:"stateDataFilter,omitempty"`
+	Type             *string          `json:"type,omitempty"`
 }
 
 // UnmarshalJSON implementation for json Unmarshal function for the Databasedswitch type
@@ -119,5 +165,23 @@ func (j *Databasedswitch) UnmarshalJSON(data []byte) error {
 		}
 		j.DataConditions[i] = condition
 	}
+
+	o := new(basedDatabasedswitch)
+	err = json.Unmarshal(data, o)
+	if err != nil {
+		return err
+	}
+
+	j.DataInputSchema = o.DataInputSchema
+	j.DataOutputSchema = o.DataOutputSchema
+	j.Default = o.Default
+	j.Id = o.Id
+	j.Metadata = o.Metadata
+	j.Name = o.Name
+	j.OnErrors = o.OnErrors
+	j.Start = o.Start
+	j.StateDataFilter = o.StateDataFilter
+	j.Type = o.Type
+
 	return nil
 }
