@@ -62,4 +62,5 @@ type State interface {
 	GetDataInputSchema() string
 	GetDataOutputSchema() string
 	GetMetadata() Metadata_1
+	SetId(id string)
 }

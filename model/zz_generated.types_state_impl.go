@@ -19,6 +19,9 @@ package model
 // GetId ...
 func (j Delaystate) GetId() string { return *j.Id }
 
+// SetId ...
+func (j *Delaystate) SetId(id string) { j.Id = &id }
+
 // GetName ...
 func (j Delaystate) GetName() string { return *j.Name }
 
@@ -43,6 +46,9 @@ func (j Delaystate) GetMetadata() Metadata_1 { return j.Metadata }
 // GetId ...
 func (j Eventstate) GetId() string { return *j.Id }
 
+// SetId ...
+func (j *Eventstate) SetId(id string) { j.Id = &id }
+
 // GetName ...
 func (j Eventstate) GetName() string { return *j.Name }
 
@@ -66,6 +72,9 @@ func (j Eventstate) GetMetadata() Metadata_1 { return j.Metadata }
 
 // GetId ...
 func (j Operationstate) GetId() string { return *j.Id }
+
+// SetId ...
+func (j *Operationstate) SetId(id string) { j.Id = &id }
 
 // GetName ...
 func (j Operationstate) GetName() string { return *j.Name }
@@ -94,6 +103,9 @@ func (j Parallelstate) GetId() string { return *j.Id }
 // GetName ...
 func (j Parallelstate) GetName() string { return *j.Name }
 
+// SetId ...
+func (j *Parallelstate) SetId(id string) { j.Id = &id }
+
 // GetType ...
 func (j Parallelstate) GetType() string { return *j.Type }
 
@@ -114,6 +126,9 @@ func (j Parallelstate) GetMetadata() Metadata_1 { return j.Metadata }
 
 // GetId ...
 func (j Subflowstate) GetId() string { return *j.Id }
+
+// SetId ...
+func (j *Subflowstate) SetId(id string) { j.Id = &id }
 
 // GetName ...
 func (j Subflowstate) GetName() string { return *j.Name }
@@ -139,6 +154,9 @@ func (j Subflowstate) GetMetadata() Metadata_1 { return j.Metadata }
 // GetId ...
 func (j Injectstate) GetId() string { return *j.Id }
 
+// SetId ...
+func (j *Injectstate) SetId(id string) { j.Id = &id }
+
 // GetName ...
 func (j Injectstate) GetName() string { return *j.Name }
 
@@ -162,6 +180,9 @@ func (j Injectstate) GetMetadata() Metadata_1 { return j.Metadata }
 
 // GetId ...
 func (j Foreachstate) GetId() string { return *j.Id }
+
+// SetId ...
+func (j *Foreachstate) SetId(id string) { j.Id = &id }
 
 // GetName ...
 func (j Foreachstate) GetName() string { return *j.Name }
@@ -187,6 +208,9 @@ func (j Foreachstate) GetMetadata() Metadata_1 { return j.Metadata }
 // GetId ...
 func (j Callbackstate) GetId() string { return *j.Id }
 
+// SetId ...
+func (j *Callbackstate) SetId(id string) { j.Id = &id }
+
 // GetName ...
 func (j Callbackstate) GetName() string { return *j.Name }
 
@@ -211,6 +235,9 @@ func (j Callbackstate) GetMetadata() Metadata_1 { return j.Metadata }
 // GetId ...
 func (j Databasedswitch) GetId() string { return *j.Id }
 
+// SetId ...
+func (j *Databasedswitch) SetId(id string) { j.Id = &id }
+
 // GetName ...
 func (j Databasedswitch) GetName() string { return *j.Name }
 
@@ -234,6 +261,9 @@ func (j Databasedswitch) GetMetadata() Metadata_1 { return j.Metadata }
 
 // GetId ...
 func (j Eventbasedswitch) GetId() string { return *j.Id }
+
+// SetId ...
+func (j *Eventbasedswitch) SetId(id string) { j.Id = &id }
 
 // GetName ...
 func (j Eventbasedswitch) GetName() string { return *j.Name }
