@@ -46,6 +46,9 @@ func (j Delaystate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 // GetMetadata ...
 func (j Delaystate) GetMetadata() Metadata_1 { return j.Metadata }
 
+// GetTransition ...
+func (j Delaystate) GetTransition() *Transition { return j.Transition }
+
 // GetId ...
 func (j Eventstate) GetId() string { return *j.Id }
 
@@ -75,6 +78,9 @@ func (j Eventstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Eventstate) GetMetadata() Metadata_1 { return j.Metadata }
+
+// GetTransition ...
+func (j Eventstate) GetTransition() *Transition { return j.Transition }
 
 // GetId ...
 func (j Operationstate) GetId() string { return *j.Id }
@@ -106,6 +112,9 @@ func (j Operationstate) GetDataOutputSchema() *string { return j.DataOutputSchem
 // GetMetadata ...
 func (j Operationstate) GetMetadata() Metadata_1 { return j.Metadata }
 
+// GetTransition ...
+func (j Operationstate) GetTransition() *Transition { return j.Transition }
+
 // GetId ...
 func (j Parallelstate) GetId() string { return *j.Id }
 
@@ -135,6 +144,9 @@ func (j Parallelstate) GetDataOutputSchema() *string { return j.DataOutputSchema
 
 // GetMetadata ...
 func (j Parallelstate) GetMetadata() Metadata_1 { return j.Metadata }
+
+// GetTransition ...
+func (j Parallelstate) GetTransition() *Transition { return j.Transition }
 
 // GetId ...
 func (j Subflowstate) GetId() string { return *j.Id }
@@ -166,6 +178,9 @@ func (j Subflowstate) GetDataOutputSchema() *string { return j.DataOutputSchema 
 // GetMetadata ...
 func (j Subflowstate) GetMetadata() Metadata_1 { return j.Metadata }
 
+// GetTransition ...
+func (j Subflowstate) GetTransition() *Transition { return j.Transition }
+
 // GetId ...
 func (j Injectstate) GetId() string { return *j.Id }
 
@@ -195,6 +210,9 @@ func (j Injectstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Injectstate) GetMetadata() Metadata_1 { return j.Metadata }
+
+// GetTransition ...
+func (j Injectstate) GetTransition() *Transition { return j.Transition }
 
 // GetId ...
 func (j Foreachstate) GetId() string { return *j.Id }
@@ -226,6 +244,9 @@ func (j Foreachstate) GetDataOutputSchema() *string { return j.DataOutputSchema 
 // GetMetadata ...
 func (j Foreachstate) GetMetadata() Metadata_1 { return j.Metadata }
 
+// GetTransition ...
+func (j Foreachstate) GetTransition() *Transition { return j.Transition }
+
 // GetId ...
 func (j Callbackstate) GetId() string { return *j.Id }
 
@@ -255,6 +276,9 @@ func (j Callbackstate) GetDataOutputSchema() *string { return j.DataOutputSchema
 
 // GetMetadata ...
 func (j Callbackstate) GetMetadata() Metadata_1 { return j.Metadata }
+
+// GetTransition ...
+func (j Callbackstate) GetTransition() *Transition { return j.Transition }
 
 // GetId ...
 func (j Databasedswitch) GetId() string { return *j.Id }
@@ -286,6 +310,9 @@ func (j Databasedswitch) GetDataOutputSchema() *string { return j.DataOutputSche
 // GetMetadata ...
 func (j Databasedswitch) GetMetadata() Metadata_1 { return j.Metadata }
 
+// GetTransition ...
+func (j Databasedswitch) GetTransition() *Transition { return nil }
+
 // GetId ...
 func (j Eventbasedswitch) GetId() string { return *j.Id }
 
@@ -315,3 +342,6 @@ func (j Eventbasedswitch) GetDataOutputSchema() *string { return j.DataOutputSch
 
 // GetMetadata ...
 func (j Eventbasedswitch) GetMetadata() Metadata_1 { return j.Metadata }
+
+// GetTransition ...
+func (j Eventbasedswitch) GetTransition() *Transition { return nil }

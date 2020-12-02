@@ -63,5 +63,6 @@ type State interface {
 	GetDataInputSchema() *string
 	GetDataOutputSchema() *string
 	GetMetadata() Metadata_1
+	GetTransition() *Transition
 	SetId(id string)
 }
