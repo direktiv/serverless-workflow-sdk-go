@@ -57,7 +57,7 @@ type State interface {
 	GetId() string
 	GetName() string
 	GetType() string
-	GetStart() Start
+	GetStart() *Start
 	GetStateDataFilter() Statedatafilter
 	GetDataInputSchema() string
 	GetDataOutputSchema() string

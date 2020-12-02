@@ -26,7 +26,7 @@ func (j Delaystate) GetName() string { return *j.Name }
 func (j Delaystate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Delaystate) GetStart() Start { return *j.Start }
+func (j Delaystate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Delaystate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -50,7 +50,7 @@ func (j Eventstate) GetName() string { return *j.Name }
 func (j Eventstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Eventstate) GetStart() Start { return *j.Start }
+func (j Eventstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Eventstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -74,7 +74,7 @@ func (j Operationstate) GetName() string { return *j.Name }
 func (j Operationstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Operationstate) GetStart() Start { return *j.Start }
+func (j Operationstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Operationstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -98,7 +98,7 @@ func (j Parallelstate) GetName() string { return *j.Name }
 func (j Parallelstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Parallelstate) GetStart() Start { return *j.Start }
+func (j Parallelstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Parallelstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -122,7 +122,7 @@ func (j Subflowstate) GetName() string { return *j.Name }
 func (j Subflowstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Subflowstate) GetStart() Start { return *j.Start }
+func (j Subflowstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Subflowstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -146,7 +146,7 @@ func (j Injectstate) GetName() string { return *j.Name }
 func (j Injectstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Injectstate) GetStart() Start { return *j.Start }
+func (j Injectstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Injectstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -170,7 +170,7 @@ func (j Foreachstate) GetName() string { return *j.Name }
 func (j Foreachstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Foreachstate) GetStart() Start { return *j.Start }
+func (j Foreachstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Foreachstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -194,7 +194,7 @@ func (j Callbackstate) GetName() string { return *j.Name }
 func (j Callbackstate) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Callbackstate) GetStart() Start { return *j.Start }
+func (j Callbackstate) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Callbackstate) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -218,7 +218,7 @@ func (j Databasedswitch) GetName() string { return *j.Name }
 func (j Databasedswitch) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Databasedswitch) GetStart() Start { return *j.Start }
+func (j Databasedswitch) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Databasedswitch) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
@@ -242,7 +242,7 @@ func (j Eventbasedswitch) GetName() string { return *j.Name }
 func (j Eventbasedswitch) GetType() string { return *j.Type }
 
 // GetType ...
-func (j Eventbasedswitch) GetStart() Start { return *j.Start }
+func (j Eventbasedswitch) GetStart() *Start { return j.Start }
 
 // GetStateDataFilter ...
 func (j Eventbasedswitch) GetStateDataFilter() Statedatafilter { return *j.StateDataFilter }
