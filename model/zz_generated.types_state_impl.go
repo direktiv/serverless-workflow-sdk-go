@@ -38,10 +38,10 @@ func (j Delaystate) GetEnd() *End { return j.End }
 func (j Delaystate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Delaystate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Delaystate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Delaystate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Delaystate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Delaystate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -68,10 +68,10 @@ func (j Eventstate) GetEnd() *End { return j.End }
 func (j Eventstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Eventstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Eventstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Eventstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Eventstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Eventstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -98,10 +98,10 @@ func (j Operationstate) GetEnd() *End { return j.End }
 func (j Operationstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Operationstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Operationstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Operationstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Operationstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Operationstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -128,10 +128,10 @@ func (j Parallelstate) GetEnd() *End { return j.End }
 func (j Parallelstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Parallelstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Parallelstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Parallelstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Parallelstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Parallelstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -158,10 +158,10 @@ func (j Subflowstate) GetEnd() *End { return j.End }
 func (j Subflowstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Subflowstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Subflowstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Subflowstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Subflowstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Subflowstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -188,10 +188,10 @@ func (j Injectstate) GetEnd() *End { return j.End }
 func (j Injectstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Injectstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Injectstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Injectstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Injectstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Injectstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -218,10 +218,10 @@ func (j Foreachstate) GetEnd() *End { return j.End }
 func (j Foreachstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Foreachstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Foreachstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Foreachstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Foreachstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Foreachstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -248,10 +248,10 @@ func (j Callbackstate) GetEnd() *End { return j.End }
 func (j Callbackstate) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Callbackstate) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Callbackstate) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Callbackstate) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Callbackstate) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Callbackstate) GetMetadata() Metadata_1 { return j.Metadata }
@@ -278,10 +278,10 @@ func (j Databasedswitch) GetEnd() *End { return nil }
 func (j Databasedswitch) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Databasedswitch) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Databasedswitch) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Databasedswitch) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Databasedswitch) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Databasedswitch) GetMetadata() Metadata_1 { return j.Metadata }
@@ -308,10 +308,10 @@ func (j Eventbasedswitch) GetEnd() *End { return nil }
 func (j Eventbasedswitch) GetStateDataFilter() *Statedatafilter { return j.StateDataFilter }
 
 // GetDataInputSchema ...
-func (j Eventbasedswitch) GetDataInputSchema() string { return *j.DataInputSchema }
+func (j Eventbasedswitch) GetDataInputSchema() *string { return j.DataInputSchema }
 
 // GetDataOutputSchema ...
-func (j Eventbasedswitch) GetDataOutputSchema() string { return *j.DataOutputSchema }
+func (j Eventbasedswitch) GetDataOutputSchema() *string { return j.DataOutputSchema }
 
 // GetMetadata ...
 func (j Eventbasedswitch) GetMetadata() Metadata_1 { return j.Metadata }

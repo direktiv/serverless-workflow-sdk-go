@@ -60,8 +60,8 @@ type State interface {
 	GetStart() *Start
 	GetEnd() *End
 	GetStateDataFilter() *Statedatafilter
-	GetDataInputSchema() string
-	GetDataOutputSchema() string
+	GetDataInputSchema() *string
+	GetDataOutputSchema() *string
 	GetMetadata() Metadata_1
 	SetId(id string)
 }
